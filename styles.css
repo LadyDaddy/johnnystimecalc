@@ -5,7 +5,7 @@ body {
 }
 
 .app-container {
-    max-width:200px;
+    max-width:500px;
     margin: 0 auto;
     border: 1px solid #ccc;
     padding: 10px;
@@ -26,8 +26,6 @@ label, span {
 }
 
 input[type="time"], input[type="number"] {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+   margin-inline-start: auto;
+   margin-inline-end: auto;
 }
