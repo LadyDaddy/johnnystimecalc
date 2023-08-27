@@ -1,10 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    size: 20pt;
 }
 
 .app-container {
-    max-width: 300px;
+    max-width: 150px;
     margin: 0 auto;
     border: 1px solid #ccc;
     padding: 20px;
@@ -12,13 +13,14 @@ body {
 }
 
 button {
-    display: block;
-    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid #008304; /* Green */
 }
 
 label, span {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 input[type="time"], input[type="number"] {
