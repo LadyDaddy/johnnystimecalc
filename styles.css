@@ -1,13 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
-    font-size: 20pt;
+    font-size: 10pt;
 }
 
 .app-container {
-    max-width:500px;
+    min-width:200px;
     margin: 0 auto;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     padding: 10px;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,9 +15,8 @@ body {
 }
 
 button {
-    background-color: rgb(0, 0, 0);
+    background-color: #008304;
     color: rgb(255, 255, 255);
-    border: 1px solid #008304; /* Green */
 }
 
 label, span {
