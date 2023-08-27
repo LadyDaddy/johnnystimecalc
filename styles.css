@@ -1,17 +1,17 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
+    padding: 10px;
     size: 20pt;
 }
 
 .app-container {
-    max-width: 150px;
+    max-width:200px;
     margin: 0 auto;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
+    padding: 10px;
     size: 20pt;
 }
 
@@ -23,7 +23,7 @@ button {
 
 label, span {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 input[type="time"], input[type="number"] {
