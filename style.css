@@ -10,6 +10,9 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    size: 20pt;
 }
 
 button {
