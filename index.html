@@ -8,34 +8,20 @@
 </head>
 <body>
     <div class="app-container">
-        <div class="input-group">
-            <label>Start Time-</label>
-            <input type="text" id="startTimeHour" placeholder="HH" maxlength="2">:
-            <input type="text" id="startTimeMinute" placeholder="MM" maxlength="2">
-            <select id="startTimeAMPM">
-                <option value="AM">AM</option>
-                <option value="PM">PM</option>
-            </select>
-            <button onclick="setCurrentTime()">Current Time</button>
-        </div>
-
-        <div class="input-group">
-            <label>Duration-</label>
-            <input type="number" id="hours" min="0" placeholder="Hours" class="duration-input">H
-            <input type="number" id="minutes" min="0" max="59" placeholder="Minutes" class="duration-input">M
-        </div>
-
+        <label for="startTime">Start Time:</label>
+        <input type="time" id="startTime">
+        <button onclick="setCurrentTime()">Use Current Time</button>
+        <br>
+        <label for="hours">Duration Hours:</label>
+        <input type="number" id="hours" min="0" placeholder="Hours">
+        <br>
+        <label for="minutes">Duration Minutes:</label>
+        <input type="number" id="minutes" min="0" max="59" placeholder="Minutes">
+        <br>
         <button onclick="calculateEndTime()">Calculate End Time</button>
-
-        <div class="input-group">
-            <label>End Time-</label>
-            <input type="text" id="endTimeHour" placeholder="HH" maxlength="2" readonly>: 
-            <input type="text" id="endTimeMinute" placeholder="MM" maxlength="2" readonly>
-            <select id="endTimeAMPM" disabled>
-                <option value="AM">AM</option>
-                <option value="PM">PM</option>
-            </select>
-        </div>
+        <br>
+        <label>End Time:</label> 
+        <span id="endTime"></span>
     </div>
     <script src="scripts.js"></script>
 </body>
