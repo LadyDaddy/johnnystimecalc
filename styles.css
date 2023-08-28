@@ -1,21 +1,35 @@
+@charset "UTF-8";
+h3 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
+    padding: 2px;
     font-size: 10pt;
 }
 
 .app-container {
-    margin: 0 auto;
-    border: 1px solid #ffffff;
+    max-width:285px;
+	align-self: flex-start;
+	margin: 0 auto;
+    border: 5px solid #000000;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 2px;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+    padding: 15px;
+	font-weight: 900;
+	font-size-adjust: auto;
 }
 
 button {
-    background-color: #008304;
-    color: rgb(255, 255, 255);
+    background-color: #FFFFFF;
+    color:#D90090;
+	font-weight: 800;
+	border-color: #D90090;
+	border-style: double;
+	border-bottom-color: #D90090;
 }
 
 label, span {
@@ -24,6 +38,10 @@ label, span {
 }
 
 input[type="time"], input[type="number"] {
-   margin-inline-start: auto;
-   margin-inline-end: auto;
+	min-width: 150px;
+}
+	
+#endTime {
+    color: #D90090;	
+	
 }

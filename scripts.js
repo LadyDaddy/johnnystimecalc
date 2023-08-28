@@ -20,8 +20,15 @@ function calculateEndTime() {
     date.setHours(startHours + hoursInput);
     date.setMinutes(startMinutes + minutesInput);
 
-    const endHours = String(date.getHours()).padStart(2, '0');
+    let endHours = date.getHours();
     const endMinutes = String(date.getMinutes()).padStart(2, '0');
+    let ampm = 'AM';
 
-    document.getElementById("endTime").innerText = `${endHours}:${endMinutes}`;
+    if (endHours >= 12) {
+        ampm = 'PM';
+        if (endHours > 12) endHours -= 12;
+    }
+    if (endHours === 0) endHours = 12;
+
+    document.getElementById("endTime").innerText = `${endHours}:${endMinutes} ${ampm}`;
 }
