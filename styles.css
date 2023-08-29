@@ -35,9 +35,42 @@ button {
 	border-bottom-color: #D90090;
 }
 
-label, span {
+.button1 button
+{
+    border: 2px solid white;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: auto;
+    margin-top: 1%;
+    padding-left: auto;
+    padding-top: auto;
+    padding-right: auto;
+    color: #FFFFFF;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 0px 0px #FFFFFF;
+    box-shadow: 0px 0px #FFFFFF;
+    background-color: #000000;
+    font-size: x-small;
+    text-align: center;
+    left: 0pc;
+    padding-bottom: auto;
+    /* [disabled]margin-left: 10%; */
+    clear: none;
+    opacity: 1;
     display: inline-block;
-    margin-top: 10px;
+}
+
+#link
+{
+	color: white
+}
+
+.button2
+{
+	
 }
 
 input[type="time"], input[type="number"] {
@@ -47,15 +80,4 @@ input[type="time"], input[type="number"] {
 #endTime {
     color: #D90090;	
 	
-}
-.inav {
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: bolder;
-    color: white;
-    text-decoration: underline;
-    position: relative;
-    bottom: auto;
-	background-color: black;
 }
