@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Difference Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h3>Time Difference Calculator</h3>
+    <div class="app-container">
+        <label for="startTime">Start Time:</label>
+        <input type="time" id="startTime">
+        <button onclick="setTheCurrentTime('startTime')">Use Current Time</button>
+        <br>
+
+        <label for="endTime">End Time:</label>
+        <input type="time" id="endTime">
+        <button onclick="setTheCurrentTime('endTime')">Use Current Time</button>
+        <br>
+
+        <button onclick="calculateTimeDifference()">Calculate Time Difference</button>
+        <br>
+
+        <label>Time Difference:</label> 
+        <span id="timeDifference"></span>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
