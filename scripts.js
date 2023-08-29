@@ -32,3 +32,37 @@ function calculateEndTime() {
 
     document.getElementById("endTime").innerText = `${endHours}:${endMinutes} ${ampm}`;
 }
+
+function setTheCurrentTime(inputId) {
+    const currentTime = new Date();
+    const hours = String(currentTime.getHours()).padStart(2, '0');
+    const minutes = String(currentTime.getMinutes()).padStart(2, '0');
+    document.getElementById(inputId).value = `${hours}:${minutes}`;
+}
+
+function calculateTimeDifference() {
+    const startTimeInput = document.getElementById("startTime").value;
+    const endTimeInput = document.getElementById("endTime").value;
+
+    if (!startTimeInput || !endTimeInput) {
+        alert("Please provide valid start and end times.");
+        return;
+    }
+
+    const [startHours, startMinutes] = startTimeInput.split(":").map(Number);
+    const [endHours, endMinutes] = endTimeInput.split(":").map(Number);
+
+    const startDate = new Date(0, 0, 0, startHours, startMinutes);
+    const endDate = new Date(0, 0, 0, endHours, endMinutes);
+
+    let differenceInMs = endDate - startDate;
+
+    if (differenceInMs < 0) {
+        differenceInMs += 24 * 60 * 60 * 1000;  // Adjust for crossing midnight
+    }
+
+    const hoursDifference = Math.floor(differenceInMs / (1000 * 60 * 60));
+    const minutesDifference = Math.floor((differenceInMs % (1000 * 60 * 60)) / (1000 * 60));
+
+    document.getElementById("timeDifference").innerText = `${hoursDifference} Hours ${minutesDifference} Minutes`;
+}
